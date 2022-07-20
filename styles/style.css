@@ -1,22 +1,29 @@
 /* ----google font style----------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+
 /*--------------
  common utilities
 --------------- */
+
 body {
     font-family: 'Poppins', sans-serif;
     width: 1200px;
     margin: 0 auto;
 }
 
+
+
+
 /* -------------
 top banner style
 --------------- */
+
 .top-banner {
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: rgb(24, 19, 19);
     margin-top: 100px;
     padding-top: 20px;
     border-radius: 25px;
@@ -45,7 +52,7 @@ top banner style
 }
 
 .link-btn {
-    background-color: yellowgreen;
+    background-color: rgb(39, 230, 39);
     height: 50px;
     width: 200px;
     margin-bottom: 50px;
@@ -56,6 +63,7 @@ top banner style
 .link-btn:hover {
     background-color: greenyellow;
 }
+
 
 /* -------------
 blog post section
@@ -133,7 +141,8 @@ blog post section
 }
 
 #blog {
-    background-color: yellowgreen;
+    background-color: tomato;
+
 }
 
 /* ------------
@@ -173,6 +182,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 100px;
+
 }
 
 .match-post {
@@ -187,7 +197,7 @@ p {
 }
 
 #match {
-    background-color: yellowgreen;
+    background-color: tomato;
 }
 
 .view-button {
@@ -201,7 +211,7 @@ p {
     height: 40px;
     margin-top: 10px;
     border-radius: 5px;
-    background-color: yellowgreen;
+    background-color: tomato;
     border: 0;
     visibility: hidden;
 }
@@ -221,11 +231,13 @@ Footer section
     padding-top: 100px;
     color: white;
     margin-top: 0;
+
 }
 
 .goal hr {
     width: 800px;
     border: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .small-container {
@@ -239,7 +251,6 @@ Footer section
     display: flex;
     justify-content: space-evenly;
     font-size: 13px;
-    margin-bottom: 100px;
 
 
 
@@ -267,8 +278,10 @@ Footer section
 /* ---------------
 media query
 ----------------- */
+
 /* Mobile Device */
 @media screen and (max-width: 767px) {
+
     body {
         width: 100%;
         margin: 0 auto;
@@ -293,11 +306,13 @@ media query
         height: 350px;
     }
 
+
     .blog-post-section {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+
     }
 
     .blog-posts {
@@ -334,10 +349,12 @@ media query
     }
 
     /* button section */
+
     .button-section {
         background-color: white;
         margin: 0 auto;
     }
+
 
     /* footer */
     .small-texts {
@@ -346,18 +363,22 @@ media query
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
     }
 
     .goal hr {
         width: 300px;
         border: 2px solid rgba(255, 255, 255, 0.1);
+
     }
+
 }
 
 /* -----------
 tablet devices
 -------------- */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
     body {
         width: 100%;
         margin: 0 auto;
@@ -379,7 +400,10 @@ tablet devices
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+
     }
+
+
 
     .blog-posts {
         width: 100%;
@@ -408,7 +432,9 @@ tablet devices
     .goal hr {
         width: 300px;
         border: 2px solid rgba(255, 255, 255, 0.1);
+
     }
+
 
     .button-section {
         background-color: white;
@@ -438,10 +464,13 @@ tablet devices
     .match-post {
         margin-left: 20px;
     }
+
 }
 
 /* Laptop */
+
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
+
     body {
         width: 100%;
         margin: 0 auto;
@@ -454,7 +483,9 @@ tablet devices
 
     .button-section {
         width: 100%;
+
     }
+
 
     .btn-link {
         width: 200px;
@@ -462,4 +493,5 @@ tablet devices
         margin-top: 20px;
         border-radius: 10px;
     }
+
 }
