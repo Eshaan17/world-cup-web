@@ -155,6 +155,7 @@ match page
     justify-content: center;
     align-items: center;
     justify-content: space-around;
+    background-color: antiquewhite;
 }
 
 .match-details {
