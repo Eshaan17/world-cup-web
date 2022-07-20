@@ -23,7 +23,7 @@ top banner style
 .top-banner {
     display: flex;
     align-items: center;
-    background-color: rgb(24, 19, 19);
+    background-color: black;
     margin-top: 100px;
     padding-top: 20px;
     border-radius: 25px;
@@ -41,10 +41,34 @@ top banner style
     display: flex;
     justify-content: center;
     padding: 0;
+    position: relative;
+}
+
+.transition-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 600px;
+    border-radius: 0 0 20px;
+    transition: opacity 1s ease;
+}
+
+.transition-image:hover {
+    opacity: 1;
+}
+
+.banner-img {
+    display: grid;
+    grid-template-columns: repeat(1.1fr);
+    height: 600px;
+    transition: transform 2s ease-in-out;
+
 }
 
 .banner-img img {
-    height: 500px;
+    height: 600px;
+
 }
 
 .banner-title h1 {
@@ -63,6 +87,11 @@ top banner style
 .link-btn:hover {
     background-color: greenyellow;
 }
+
+/* -------------
+top banner animation
+--------------- */
+.ani {}
 
 
 /* -------------
@@ -194,7 +223,7 @@ p {
     margin-bottom: 20px;
     border-right: solid grey;
     border-bottom: solid grey;
-    box-shadow: 10px 10px blanchedalmond;
+    box-shadow: 5px 10px blanchedalmond;
     border-radius: 5px;
 }
 
